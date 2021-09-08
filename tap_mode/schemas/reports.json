@@ -1,0 +1,137 @@
+{
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "edited_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "theme_id": {
+      "type": ["integer", "null"]
+    },
+    "color_mappings": {
+      "type": ["string", "null"]
+    },
+    "type": {
+      "type": "string"
+    },
+    "last_successful_sync_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "last_saved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "archived": {
+      "type": "boolean"
+    },
+    "space_token": {
+      "type": ["string", "null"]
+    },
+    "account_id": {
+      "type": "integer"
+    },
+    "account_username": {
+      "type": "string"
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "full_width": {
+      "type": ["boolean", "null"]
+    },
+    "manual_run_disabled": {
+      "type": ["boolean", "null"]
+    },
+    "run_privately": {
+      "type": "boolean"
+    },
+    "drilldowns_enabled": {
+      "type": "boolean"
+    },
+    "layout": {
+      "type": ["string", "null"]
+    },
+    "is_embedded": {
+      "type": ["boolean", "null"]
+    },
+    "is_signed": {
+      "type": ["boolean", "null"]
+    },
+    "shared": {
+      "type": ["boolean", "null"]
+    },
+    "expected_runtime": {
+      "type": "float"
+    },
+    "last_successfully_run_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_run_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "web_preview_image": {
+      "type": ["string", "null"]
+    },
+    "last_successful_run_token": {
+      "type": "string"
+    },
+    "flamingo_signature": {
+      "type": ["string", "null"]
+    },
+    "github_link": {
+      "type": ["string", "null"]
+    },
+    "query_count": {
+      "type": "string"
+    },
+    "max_query_count": {
+      "type": "string"
+    },
+    "chart_count": {
+      "type": ["string", "null"]
+    },
+    "runs_count": {
+      "type": "string"
+    },
+    "schedules_count": {
+      "type": ["string", "null"]
+    },
+    "query_preview": {
+      "type": "string"
+    },
+    "view_count": {
+      "type": "string"
+    }
+  }
+}
+
+
+
+
