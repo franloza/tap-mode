@@ -22,7 +22,7 @@
       "format": "date-time"
     },
     "published_at": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "edited_at": {
