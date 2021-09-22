@@ -106,25 +106,25 @@
       "type": ["string", "null"]
     },
     "query_count": {
-      "type": "string"
+      "type": "integer"
     },
     "max_query_count": {
-      "type": "string"
+      "type": "integer"
     },
     "chart_count": {
-      "type": ["string", "null"]
+      "type": ["integer", "null"]
     },
     "runs_count": {
-      "type": "string"
+      "type": "integer"
     },
     "schedules_count": {
-      "type": ["string", "null"]
+      "type": ["integer", "null"]
     },
     "query_preview": {
       "type": "string"
     },
     "view_count": {
-      "type": "string"
+      "type": "integer"
     }
   }
 }
