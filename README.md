@@ -5,6 +5,7 @@
 This package is NOT officially supported by Mode. Users are welcome to open issues or pull requests to improve the tap.
 
 Extracts the following resources from [Mode API](https://mode.com/developer/api-reference/):
+- [Collections/Spaces](https://mode.com/developer/api-reference/management/collections/)
 - [Reports](https://mode.com/developer/api-reference/analytics/reports/)
 
 Built with the Meltano [SDK](https://gitlab.com/meltano/sdk) for Singer Taps.

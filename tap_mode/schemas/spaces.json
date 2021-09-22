@@ -6,10 +6,33 @@
     },
     "id": {
       "type": "integer"
+    },
+    "space_type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "restricted": {
+      "type": "boolean"
+    },
+    "free_default": {
+      "type": "string"
+    },
+    "viewable?": {
+      "type": "string"
+    },
+    "viewed": {
+      "type": ["string", "null"]
+    },
+    "default_access_level": {
+      "type": ["string", "null"]
     }
   }
 }
-
-
-
-
