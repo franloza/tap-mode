@@ -11,10 +11,10 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "description": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "state": {
       "type": "string"
