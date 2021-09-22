@@ -21,7 +21,8 @@ pipx install  git+https://github.com/franloza/mode-tap.git
 
 The following configuration options are available:
 
-- auth_token (required): API access token. See how to obtain it from Mode [here](https://mode.com/developer/api-reference/authentication/)
+- auth_token (required): The public component of the credential. See how to obtain it from Mode [here](https://mode.com/developer/api-reference/authentication/)
+- password (required): The private component of the credential. See how to obtain it from Mode [here](https://mode.com/developer/api-reference/authentication/)
 - workspace (required): Name of the Mode workspace
 - user_agent (optional): It should be set to something that includes the name of your app, and a contact email address should the API provider need to contact you for any reason.
 

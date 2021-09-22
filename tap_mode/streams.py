@@ -15,6 +15,7 @@ class SpacesStream(ModeStream):
     primary_keys = ["id"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "spaces.json"
+    records_jsonpath = "$._embedded.spaces[*]"
 
     def get_child_context(self, record: dict, context: Optional[dict]) -> dict:
         """Return a context dictionary for child streams."""
@@ -27,7 +28,8 @@ class ReportsStream(ModeStream):
     """Define reports stream."""
     parent_stream_type = SpacesStream
     name = "reports"
-    path = "spaces/{space_token}/reports"
+    path = "/spaces/{space_token}/reports"
     primary_keys = ["id"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "reports.json"
+    records_jsonpath = "$._embedded.reports[*]"

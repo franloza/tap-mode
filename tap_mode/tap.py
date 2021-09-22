@@ -21,6 +21,7 @@ class TapMode(Tap):
 
     config_jsonschema = th.PropertiesList(
         th.Property("auth_token", th.StringType, required=True),
+        th.Property("password", th.StringType, required=True),
         th.Property("workspace", th.StringType, required=True),
         th.Property("user_agent", th.StringType, default="Tap-Mode"),
     ).to_dict()
