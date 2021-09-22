@@ -54,7 +54,6 @@ class ModeStream(RESTStream):
     ) -> Dict[str, Any]:
         """Return a dictionary of values to be used in URL parameterization."""
         params: dict = {"page": next_page_token if next_page_token else 1}
-        a = "?filter=created_at.gt.2019-12-19T10:21:12Z'"
         if self.replication_key:
             params["order"] = "asc"
             params["order_by"] = self.replication_key
