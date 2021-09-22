@@ -32,9 +32,6 @@
     "theme_id": {
       "type": ["integer", "null"]
     },
-    "color_mappings": {
-      "type": ["string", "null"]
-    },
     "type": {
       "type": "string"
     },
