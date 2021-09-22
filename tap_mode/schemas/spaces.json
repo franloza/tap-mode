@@ -23,13 +23,13 @@
       "type": "boolean"
     },
     "free_default": {
-      "type": "string"
+      "type": "boolean"
     },
     "viewable?": {
-      "type": "string"
+      "type": "boolean"
     },
-    "viewed": {
-      "type": ["string", "null"]
+    "viewed?": {
+      "type": ["boolean", "null"]
     },
     "default_access_level": {
       "type": ["string", "null"]
