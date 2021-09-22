@@ -11,11 +11,11 @@ from tap_mode.auth import ModeAuthenticator
 
 SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
 
-
 class ModeStream(RESTStream):
     """Mode stream class."""
 
     _url_base = "https://app.mode.com/api/"
+    replication_key_value_format = 'YYYY-MM-DDTHH:MM:SS\\Z'
 
     records_jsonpath = "$[*]"
 
@@ -40,8 +40,13 @@ class ModeStream(RESTStream):
     ) -> Optional[Any]:
         """Return a token for identifying next page or None if no more pages."""
         next_page_token = None
-        if response.json()['_embedded'][self.tap_stream_id]:
-            next_page_token = previous_token + 1 if previous_token else 2
+        if self.next_page_token_jsonpath:
+            all_matches = extract_jsonpath(
+                self.next_page_token_jsonpath, response.json()
+            )
+            first_match = next(iter(all_matches), None)
+            if first_match:
+                next_page_token = previous_token + 1 if previous_token else 2
         return next_page_token
 
     def get_url_params(
@@ -49,9 +54,14 @@ class ModeStream(RESTStream):
     ) -> Dict[str, Any]:
         """Return a dictionary of values to be used in URL parameterization."""
         params: dict = {"page": next_page_token if next_page_token else 1}
+        a = "?filter=created_at.gt.2019-12-19T10:21:12Z'"
         if self.replication_key:
-            params["sort"] = "asc"
+            params["order"] = "asc"
             params["order_by"] = self.replication_key
+            starting_timestamp = self.get_starting_timestamp(context)
+            if starting_timestamp:
+                replication_key_value = starting_timestamp.format(self.replication_key_value_format)
+                params["filter"] = f"{self.replication_key}.gt.{replication_key_value}"
         return params
 
     @property

@@ -26,6 +26,7 @@ The following configuration options are available:
 - password (required): The private component of the credential. See how to obtain it from Mode [here](https://mode.com/developer/api-reference/authentication/)
 - workspace (required): Name of the Mode workspace
 - user_agent (optional): It should be set to something that includes the name of your app, and a contact email address should the API provider need to contact you for any reason.
+- start_date (optional): Fetch only entities created/updated after that date.
 
 A full list of supported settings and capabilities for this
 tap is available by running:

@@ -24,6 +24,7 @@ class TapMode(Tap):
         th.Property("password", th.StringType, required=True),
         th.Property("workspace", th.StringType, required=True),
         th.Property("user_agent", th.StringType, default="Tap-Mode"),
+        th.Property("start_date", th.StringType),
     ).to_dict()
 
     def discover_streams(self) -> List[Stream]:

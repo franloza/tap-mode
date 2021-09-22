@@ -30,6 +30,8 @@ class ReportsStream(ModeStream):
     name = "reports"
     path = "/spaces/{space_token}/reports"
     primary_keys = ["id"]
-    replication_key = None
+    replication_key = "updated_at"
+    replication_method = "INCREMENTAL"
     schema_filepath = SCHEMAS_DIR / "reports.json"
     records_jsonpath = "$._embedded.reports[*]"
+    next_page_token_jsonpath = "$._embedded.reports[*]"
