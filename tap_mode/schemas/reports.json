@@ -83,7 +83,7 @@
       "type": ["boolean", "null"]
     },
     "expected_runtime": {
-      "type": "float"
+      "type": "number"
     },
     "last_successfully_run_at": {
       "type": "string",
