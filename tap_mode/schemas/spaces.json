@@ -8,7 +8,7 @@
       "type": "integer"
     },
     "space_type": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "name": {
       "type": ["string", "null"]
@@ -17,16 +17,16 @@
       "type": ["string", "null"]
     },
     "state": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "restricted": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "free_default": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "viewable?": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "viewed?": {
       "type": ["boolean", "null"]

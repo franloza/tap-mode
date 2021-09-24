@@ -8,13 +8,13 @@
       "type": "integer"
     },
     "name": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "description": {
       "type": ["string", "null"]
     },
     "created_at": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "updated_at": {
@@ -33,30 +33,30 @@
       "type": ["integer", "null"]
     },
     "type": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "last_successful_sync_at": {
       "type": ["string", "null"],
       "format": "date-time"
     },
     "last_saved_at": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "archived": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "space_token": {
       "type": ["string", "null"]
     },
     "account_id": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "account_username": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "public": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "full_width": {
       "type": ["boolean", "null"]
@@ -65,10 +65,10 @@
       "type": ["boolean", "null"]
     },
     "run_privately": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "drilldowns_enabled": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "layout": {
       "type": ["string", "null"]
@@ -83,21 +83,21 @@
       "type": ["boolean", "null"]
     },
     "expected_runtime": {
-      "type": "number"
+      "type": ["number", "null"]
     },
     "last_successfully_run_at": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "last_run_at": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "web_preview_image": {
       "type": ["string", "null"]
     },
     "last_successful_run_token": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "flamingo_signature": {
       "type": ["string", "null"]
@@ -106,25 +106,25 @@
       "type": ["string", "null"]
     },
     "query_count": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "max_query_count": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "chart_count": {
       "type": ["integer", "null"]
     },
     "runs_count": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "schedules_count": {
       "type": ["integer", "null"]
     },
     "query_preview": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "view_count": {
-      "type": "integer"
+      "type": ["integer", "null"]
     }
   }
 }
